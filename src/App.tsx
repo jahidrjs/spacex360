@@ -2,12 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h3>Ant design implement and test</h3>
+        <DatePicker />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
