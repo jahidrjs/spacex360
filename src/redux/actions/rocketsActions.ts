@@ -10,7 +10,7 @@ export const setRockets = (rockets:any) => {
 export const selectedRocket = (rocket:any) => {
   return {
     type: ActionTypes.SELECTED_ROCKET,
-    payload: rocket,
+    payload: rocket.data,
   };
 };
 export const removeSelectedRocket = () => {

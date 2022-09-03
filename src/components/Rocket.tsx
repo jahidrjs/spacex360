@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { Col, Row, Card } from 'antd';
+import { Col, Row, Card, Image } from 'antd';
 const { Meta } = Card;
 
 const rocket = () => {
@@ -23,7 +23,7 @@ const rocket = () => {
             hoverable
             style={{ width: '100%', marginBottom: 10 }}
             cover={
-              <img alt="example" src={rocketdata.links.mission_patch_small} />
+              <Image alt="example" src={rocketdata.links.mission_patch_small} />
             }
           >
             <Meta
