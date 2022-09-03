@@ -1,6 +1,4 @@
 import React from 'react';
-import './App.css';
-import 'antd/dist/antd.css';
 import Home from './components/Home';
 import Search from './components/Search';
 import Details from './components/Detail';
@@ -13,7 +11,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="search" element={<Search />} />
-          <Route path="details" element={<Details />} />
+          <Route path="details/:launchId" element={<Details />} />
+          <Route>404 Not Found!</Route>
         </Routes>
       </div>
     </Router>

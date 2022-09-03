@@ -1,12 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import store from './redux/store';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+
+import { Breadcrumb, Layout, Menu } from 'antd';
+const { Header, Content, Footer } = Layout;
+import 'antd/dist/antd.css';
+
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Footersection from './components/Footersection';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -14,14 +18,13 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Nav />
-      <App />
-      <Footer />
+      <Layout>
+        <Nav />
+        <App />
+        <Footersection />
+      </Layout>
     </Provider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
