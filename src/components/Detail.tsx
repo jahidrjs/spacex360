@@ -36,7 +36,8 @@ function Detail() {
 
   const rocketinfo = selectRocket.rocket;
   const linkinfo = selectRocket.links;
-  var imageLink = 'https://media3.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif';
+  var imageLink =
+    'https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw340';
   if (typeof linkinfo != 'undefined') {
     // console.log(linkinfo);
     imageLink = linkinfo.mission_patch;

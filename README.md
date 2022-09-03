@@ -1,6 +1,28 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+### Step to setup Project
+#### Step 1
+Create React redux with typescript project
+npx create-react-app my-app --template redux-typescript
+Then setup redux and type script and config ESlint with prettier formater
+Add under Github repo
+
+#### Step 2
+Install ant Design framework and import in layout theming system
+
+#### Step 3
+Design page
+
+#### Step 4
+dev redux action, constants and reducers for state management and test in browser redux extension
+SpaceX API go through and response check and set state under redux
+
+#### 5
+install globaly vercel then Build and deploy from VS Code
+
+
+
 
 ## Available Scripts
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { setRockets } from '../redux/actions/rocketsActions';
@@ -38,6 +38,7 @@ import {
 const { Option } = Select;
 
 function Home() {
+  const [searchItem, SetsearchItem] = useState('');
   const rockets = useSelector((state: any) => state.allRockets.rockets);
   // console.log('rocket' + rockets);
   const dispatch = useDispatch();
@@ -92,7 +93,7 @@ function Home() {
           </Col>
           <Col span={10}>
             <Search
-              placeholder="input search text"
+              placeholder="Search By Rocket name"
               enterButton="Search"
               size="large"
               suffix={suffix}

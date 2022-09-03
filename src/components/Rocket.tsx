@@ -6,7 +6,7 @@ const { Meta } = Card;
 
 const rocket = () => {
   const rockets = useSelector((state: any) => state.allRockets.rockets);
-  console.log(rockets);
+
   const renderList = rockets.map((rocketdata: any) => {
     // const { id, title, image, price, category } = rocket;
     return (
