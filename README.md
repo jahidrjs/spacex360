@@ -20,6 +20,7 @@ SpaceX API go through and response check and set state under redux
 
 #### 5
 install globaly vercel then Build and deploy from VS Code
+Live Deploy code under vercel : https://spacex360.vercel.app/
 
 
 
